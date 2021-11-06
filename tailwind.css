@@ -5,9 +5,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
-    html, body {
-        font-family: 'Open Sans', sans-serif;
-        @apply antialiased
-    }
+  html,
+  body {
+    font-family: 'Open Sans', sans-serif;
+    @apply antialiased;
+  }
+}
+
+.menu-flags {
+  @apply pb-0;
+}
+
+.menu-flags button {
+  @apply h-14 border-2 text-xs border-gray-200 transition-colors bg-white rounded focus:border-primary-brand-color;
+}
+
+.menu-flags button > span span:nth-child(2) {
+  @apply pl-1;
+}
+
+.menu-flags button > span span:nth-child(3) {
+  @apply text-sm;
 }

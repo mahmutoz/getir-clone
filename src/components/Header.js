@@ -10,15 +10,24 @@ function Header(props) {
           <img src={GetirLogo} alt="logo" />
         </a>
         <nav className="flex gap-x-8 text-sm font-semibold">
-          <a href="#" className="flex items-center gap-x-1 text-getir-color hover:text-opacity-90">
-            <BiGlobe size={20}/>
+          <a
+            href="#"
+            className="flex items-center gap-x-1 text-getir-color hover:text-opacity-90"
+          >
+            <BiGlobe size={20} />
             Türkçe (TR)
           </a>
-          <a href="#" className="flex items-center gap-x-1 text-getir-color hover:text-opacity-90">
-            <RiUserFill size={18}/> Giriş Yap
+          <a
+            href="#"
+            className="flex items-center gap-x-1 text-getir-color hover:text-opacity-90"
+          >
+            <RiUserFill size={18} /> Giriş Yap
           </a>
-          <a href="#" className="flex items-center gap-x-1 text-getir-color hover:text-opacity-90">
-            <RiUserAddFill size={18}/> Kayıt Ol
+          <a
+            href="#"
+            className="flex items-center gap-x-1 text-getir-color hover:text-opacity-90"
+          >
+            <RiUserAddFill size={18} /> Kayıt Ol
           </a>
         </nav>
       </div>
