@@ -1,7 +1,7 @@
 import Campaigns from './components/Campaigns';
 import Cards from './components/Cards';
 import Categories from './components/Categories';
-import Favourites from './components/Favourites';
+import Favorites from './components/Favorites';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import Header from './components/Header';
@@ -15,7 +15,7 @@ function App() {
       <Categories />
       <Campaigns />
       <div className="container mx-auto">
-        <Favourites />
+        <Favorites />
         <MobileApp />
         <Cards />
       </div>
