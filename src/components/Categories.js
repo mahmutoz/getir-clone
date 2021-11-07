@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import categoriesData from 'api/categories';
-import Category from './Category';
+import Category from './UI/Category';
+import SectionTitle from './UI/SectionTitle';
 
 function Categories(props) {
   const [categories, setCategories] = useState([]);
@@ -12,7 +13,7 @@ function Categories(props) {
   return (
     <div className="bg-white py-6">
       <div className="container mx-auto">
-        <h3 className="font-semibold text-sm text-gray-dark">Kategoriler</h3>
+        <SectionTitle>Kategoriler</SectionTitle>
         <div className="grid grid-cols-10 gap-4">
           {categories &&
             categories.map((category, index) => (

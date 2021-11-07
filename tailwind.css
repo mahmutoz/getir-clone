@@ -32,3 +32,11 @@
 .menu-flags button > span span:nth-child(3) {
   @apply text-sm;
 }
+
+.banners-slide {
+  @apply focus:outline-none -mx-2;
+}
+
+.banners-slide button {
+  @apply bg-transparent before:text-primary-brand-color;
+}

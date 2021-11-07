@@ -1,11 +1,11 @@
-import Campaigns from './components/Campaigns'
-import Cards from './components/Cards'
-import Categories from './components/Categories'
-import Favourites from './components/Favourites'
-import Footer from './components/Footer'
-import HeroSection from './components/HeroSection'
-import Header from './components/Header'
-import MobileApp from './components/MobileApp'
+import Campaigns from './components/Campaigns';
+import Cards from './components/Cards';
+import Categories from './components/Categories';
+import Favourites from './components/Favourites';
+import Footer from './components/Footer';
+import HeroSection from './components/HeroSection';
+import Header from './components/Header';
+import MobileApp from './components/MobileApp';
 
 function App() {
   return (
@@ -14,9 +14,11 @@ function App() {
       <HeroSection />
       <Categories />
       <Campaigns />
-      <Favourites />
-      <MobileApp />
-      <Cards />
+      <div className="container mx-auto">
+        <Favourites />
+        <MobileApp />
+        <Cards />
+      </div>
       <Footer />
     </div>
   );
