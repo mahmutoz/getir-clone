@@ -12,6 +12,10 @@ module.exports = {
         'brand-yellow': '#ffd300',
         'gray-dark': '#3e3e3e',
       }),
+      backgroundImage: (theme) => ({
+        'mobile-background':
+          "url('https://getir.com/_next/static/images/doodle-d659f9f1fd505c811c2331fe3ffddd5f.png')",
+      }),
     },
     screens: {
       sm: '640px',
