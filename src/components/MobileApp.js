@@ -7,7 +7,10 @@ function MobileApp(props) {
           İstediğiniz ürünleri dakikalar içinde kapınıza getirelim.
         </p>
         <div className="flex gap-x-2 pt-8">
-          <a href="https://itunes.apple.com/app/id995280265">
+          <a
+            className="hover:scale-[0.97] transition-all"
+            href="https://itunes.apple.com/app/id995280265"
+          >
             <img
               width="160"
               height="100%"
@@ -15,14 +18,20 @@ function MobileApp(props) {
               alt="app store"
             />
           </a>
-          <a href="https://itunes.apple.com/app/id995280265">
+          <a
+            className="hover:scale-[0.97] transition-all"
+            href="https://itunes.apple.com/app/id995280265"
+          >
             <img
               width="160"
               src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg"
               alt="app store"
             />
           </a>
-          <a href="https://itunes.apple.com/app/id995280265">
+          <a
+            className="hover:scale-[0.97] transition-all"
+            href="https://itunes.apple.com/app/id995280265"
+          >
             <img
               width="160"
               src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg"

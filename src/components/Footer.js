@@ -1,7 +1,89 @@
+import FooterInfoMenu from './UI/FooterInfoMenu';
+import { SiFacebook, SiInstagram, SiTwitter } from 'react-icons/si';
+import { FiGlobe } from 'react-icons/fi';
+
 function Footer(props) {
+  const FooterMenu = [
+    {
+      title: "Getir'i keşfedin",
+      items: [
+        {
+          name: 'Hakkımızda',
+          url: 'https://getir.com/hakkimizda/',
+        },
+        {
+          name: 'Kariyer',
+          url: 'https://apply.workable.com/getir/',
+        },
+        {
+          name: 'Teknoloji Kariyerleri',
+          url: 'https://technology.getir.com/',
+        },
+        {
+          name: 'İletişim',
+          url: 'https://getir.com/iletisim/',
+        },
+        {
+          name: 'COVID-19 Duyuru',
+          url: 'https://getir.com/duyuru/',
+        },
+        {
+          name: 'Sosyal Sorumluluk Projeleri',
+          url: 'https://getir.com/sosyal-sorumluluk-projeleri/',
+        },
+      ],
+    },
+    {
+      title: 'Yardıma mı ihtiyacınız var?',
+      items: [
+        {
+          name: 'Sıkça Sorulan Sorular',
+          url: 'https://getir.com/yardim/sss/',
+        },
+        {
+          name: 'Kişisel Verilerin Korunması',
+          url: 'https://getir.com/yardim/kvkk/',
+        },
+        {
+          name: 'Gizlilik Politikası',
+          url: 'https://getir.com/yardim/gizlilik-politikasi/',
+        },
+        {
+          name: 'Kullanım Koşulları',
+          url: 'https://getir.com/yardim/kullanim-kosullari/',
+        },
+        {
+          name: 'Çerez Politikası',
+          url: 'https://getir.com/yardim/cerez-politikasi/',
+        },
+      ],
+    },
+    {
+      title: 'İş Ortağımız Olun',
+      items: [
+        {
+          name: 'Bayimiz Olun',
+          url: 'https://bayi-basvuru.getir.com/',
+        },
+        {
+          name: 'Deponuzu Kiralayın',
+          url: 'https://depodukkan.getir.com/',
+        },
+        {
+          name: 'GetirYemek Restoranı Olun',
+          url: 'https://basvuru.getir.com/restoran/',
+        },
+        {
+          name: 'GetirÇarşı İşletmesi Olun',
+          url: 'https://panel.getircarsi.com/form/on-basvuru/',
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="bg-white mt-14">
-      <div className="container mx-auto py-10">
+      <div className="container mx-auto pt-10 pb-4">
         <div className="grid grid-flow-col auto-cols-auto gap-6">
           <div>
             <h3 className="text-primary-brand-color text-lg pb-2">
@@ -34,90 +116,9 @@ function Footer(props) {
               </li>
             </ul>
           </div>
-          <div>
-            <h3 className="text-primary-brand-color text-lg pb-2">
-              Getir'i keşfedin
-            </h3>
-            <ul>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://getir.com/hakkimizda/">Hakkımızda</a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://apply.workable.com/getir/">Kariyer</a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://technology.getir.com/">
-                  Teknoloji Kariyerleri
-                </a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://getir.com/iletisim/">İletişim</a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://getir.com/duyuru/">COVID-19 Duyuru</a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://getir.com/sosyal-sorumluluk-projeleri/">
-                  Sosyal Sorumluluk Projeleri
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-primary-brand-color text-lg pb-2">
-              Yardıma mı ihtiyacınız var?
-            </h3>
-            <ul>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://getir.com/yardim/sss/">
-                  Sıkça Sorulan Sorular
-                </a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://getir.com/yardim/kvkk/">
-                  Kişisel Verilerin Korunması
-                </a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://getir.com/yardim/gizlilik-politikasi/">
-                  Gizlilik Politikası
-                </a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://getir.com/yardim/kullanim-kosullari/">
-                  Kullanım Koşulları
-                </a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://getir.com/yardim/cerez-politikasi/">
-                  Çerez Politikası
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-primary-brand-color text-lg pb-2">
-              İş Ortağımız Olun
-            </h3>
-            <ul>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://bayi-basvuru.getir.com/">Bayimiz Olun</a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://depodukkan.getir.com/">Deponuzu Kiralayın</a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://basvuru.getir.com/restoran/">
-                  GetirYemek Restoranı Olun
-                </a>
-              </li>
-              <li className="py-2 text-sm text-gray-600">
-                <a href="https://panel.getircarsi.com/form/on-basvuru/">
-                  GetirÇarşı İşletmesi Olun
-                </a>
-              </li>
-            </ul>
-          </div>
+          {FooterMenu.map((menu, index) => (
+            <FooterInfoMenu {...menu} key={index} />
+          ))}
           <div className="justify-self-end">
             <a
               className="inline-block rounded-lg p-4 border border-gray-200 shadow-lg"
@@ -135,8 +136,10 @@ function Footer(props) {
           </div>
         </div>
         <div className="flex justify-between border-t border-gray-100 pt-5 mt-5">
-          <div className="flex text-[13px] gap-x-5">
-            <p>© 2021 Getir</p>
+          <div className="flex text-[13px] gap-x-6">
+            <p className="text-gray-500 relative before:absolute before:w-[3px] before:h-[3px] before:bg-gray-500 before:rounded-full before:top-1/4 before:-right-3">
+              © 2021 Getir
+            </p>
             <a
               href="http://localhost:3000/"
               className="block text-primary-brand-color"
@@ -144,7 +147,40 @@ function Footer(props) {
               Bilgi Toplumu Hizmetleri
             </a>
           </div>
-          <div></div>
+          <div>
+            <ul className="flex items-center justify-center gap-x-2">
+              <li>
+                <a
+                  className="footer-social"
+                  href="https://www.facebook.com/KuzeydenSu"
+                >
+                  <SiFacebook size={20} />
+                </a>
+              </li>
+              <li>
+                <a
+                  className="footer-social"
+                  href="https://twitter.com/kuzeydensu"
+                >
+                  <SiTwitter size={20} />
+                </a>
+              </li>
+              <li>
+                <a
+                  className="footer-social"
+                  href="https://www.instagram.com/kuzeydensu"
+                >
+                  <SiInstagram size={20} />
+                </a>
+              </li>
+              <li>
+                <button className="footer-social border !w-full px-2 border-gray-100">
+                  <FiGlobe size={18} />
+                  <div className="text-xs ml-2">Türkçe (TR)</div>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
