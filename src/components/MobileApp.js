@@ -1,12 +1,12 @@
 function MobileApp(props) {
   return (
-    <div className="flex justify-between bg-mobile-background bg-primary-brand-color rounded-lg pt-6">
-      <div className="flex flex-col justify-center ml-12">
+    <div className="flex flex-col md:flex-row justify-between bg-mobile-background bg-primary-brand-color md:rounded-lg pt-6">
+      <div className="flex flex-col md:justify-center items-center md:items-baseline ml-12 text-center md:text-left">
         <h2 className="text-white text-[26px] font-bold">Getir'i indirin!</h2>
         <p className="text-white mt-3 max-w-sm font-semibold">
           İstediğiniz ürünleri dakikalar içinde kapınıza getirelim.
         </p>
-        <div className="flex gap-x-2 pt-8">
+        <div className="flex md:flex-row flex-wrap md:flex-nowrap gap-2 pt-8 justify-center">
           <a
             className="hover:scale-[0.97] transition-all"
             href="https://itunes.apple.com/app/id995280265"
@@ -40,7 +40,7 @@ function MobileApp(props) {
           </a>
         </div>
       </div>
-      <figure className="flex justify-end">
+      <figure className="flex mt-4 md:mt-0 justify-end">
         <img
           src="https://getir.com/_next/static/images/phoneLanding-88c033545710c4808054072689e187d7.png"
           alt="mobile images"

@@ -13,7 +13,7 @@ function Favourites(props) {
   return (
     <div>
       <Title>Favoriler</Title>
-      <div className="grid grid-cols-8 border border-gray-50 rounded-md mb-6">
+      <div className="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-8 border border-gray-50 rounded-md mb-6">
         {products.length &&
           products.map((product) => (
             <Product key={product.id} product={product} />

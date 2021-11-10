@@ -9,12 +9,12 @@ import MobileApp from './components/MobileApp';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex flex-col">
       <Header />
       <HeroSection />
       <Categories />
       <Campaigns />
-      <div className="container mx-auto">
+      <div className="container mx-auto order-5">
         <Favorites />
         <MobileApp />
         <Cards />

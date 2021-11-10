@@ -16,4 +16,3 @@ yarn start
 - [react-slick](https://react-slick.neostack.com/)
 - [react-collapse](https://www.npmjs.com/package/react-collapse)
 - [react-icons](https://react-icons.github.io/)
-- [useWindowSize](https://www.npmjs.com/package/@react-hook/window-size)

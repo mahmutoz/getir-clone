@@ -82,7 +82,7 @@ function Footer(props) {
   ];
 
   return (
-    <div className="bg-white mt-14">
+    <div className="bg-white mt-14 order-last">
       <div className="container mx-auto pt-10 pb-4">
         <div className="grid grid-flow-col auto-cols-auto gap-6">
           <div>
