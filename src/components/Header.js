@@ -5,7 +5,7 @@ import { RiUserFill, RiUserAddFill } from 'react-icons/ri';
 function Header(props) {
   return (
     <div className="bg-brand-color z-50 sticky top-0 order-1">
-      <div className="container mx-auto h-16 md:h-11 flex items-center justify-center md:justify-between">
+      <div className="md:container mx-auto h-16 md:h-11 flex items-center justify-center md:justify-between">
         <a href="/">
           <img src={GetirLogo} alt="logo" />
         </a>

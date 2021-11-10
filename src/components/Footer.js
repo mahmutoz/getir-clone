@@ -83,14 +83,14 @@ function Footer(props) {
 
   return (
     <div className="bg-white mt-14 order-last">
-      <div className="container mx-auto pt-10 pb-4">
-        <div className="grid grid-flow-col auto-cols-auto gap-6">
+      <div className="container mx-auto pt-10 pb-4 px-4 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:auto-cols-auto gap-4">
           <div>
             <h3 className="text-primary-brand-color text-lg pb-2">
               Getir'i indirin!
             </h3>
-            <ul>
-              <li className="py-2">
+            <ul className="flex flex-wrap justify-center md:justify-start gap-4">
+              <li>
                 <a href="https://itunes.apple.com/app/id995280265">
                   <img
                     src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg"
@@ -98,7 +98,7 @@ function Footer(props) {
                   />
                 </a>
               </li>
-              <li className="py-2">
+              <li>
                 <a href="https://play.google.com/store/apps/details?id=com.getir">
                   <img
                     src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg"
@@ -106,7 +106,7 @@ function Footer(props) {
                   />
                 </a>
               </li>
-              <li className="py-2">
+              <li>
                 <a href="https://appgallery7.huawei.com/#/app/C100954039">
                   <img
                     src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg"
@@ -119,7 +119,7 @@ function Footer(props) {
           {FooterMenu.map((menu, index) => (
             <FooterInfoMenu {...menu} key={index} />
           ))}
-          <div className="justify-self-end">
+          <div className="justify-self-center md:justify-self-end">
             <a
               className="inline-block rounded-lg p-4 border border-gray-200 shadow-lg"
               href="https://etbis.eticaret.gov.tr/sitedogrulama/A8C52359B2F14075B6829557FC4306B1"
@@ -135,9 +135,9 @@ function Footer(props) {
             </a>
           </div>
         </div>
-        <div className="flex justify-between border-t border-gray-100 pt-5 mt-5">
-          <div className="flex text-[13px] gap-x-6">
-            <p className="text-gray-500 relative before:absolute before:w-[3px] before:h-[3px] before:bg-gray-500 before:rounded-full before:top-1/4 before:-right-3">
+        <div className="flex flex-col md:flex-row items-center md:justify-between border-t border-gray-100 pt-5 mt-5">
+          <div className="flex flex-col md:flex-row items-center text-[13px] gap-4">
+            <p className="text-gray-500 relative before:hidden md:before:block before:absolute before:w-[3px] before:h-[3px] before:bg-gray-500 before:rounded-full before:top-1/2 before:-translate-y-1/2 before:-right-2">
               © 2021 Getir
             </p>
             <a
@@ -147,7 +147,7 @@ function Footer(props) {
               Bilgi Toplumu Hizmetleri
             </a>
           </div>
-          <div>
+          <div className="flex flex-col md:flex-row mt-2 md:mt-0">
             <ul className="flex items-center justify-center gap-x-2">
               <li>
                 <a
@@ -173,13 +173,12 @@ function Footer(props) {
                   <SiInstagram size={20} />
                 </a>
               </li>
-              <li>
-                <button className="footer-social border !w-full px-2 border-gray-100">
-                  <FiGlobe size={18} />
-                  <div className="text-xs ml-2">Türkçe (TR)</div>
-                </button>
-              </li>
+              <li></li>
             </ul>
+            <button className="footer-social border !w-full px-2 border-gray-100">
+              <FiGlobe size={18} />
+              <div className="text-xs ml-2">Türkçe (TR)</div>
+            </button>
           </div>
         </div>
       </div>
