@@ -1,10 +1,11 @@
 import GetirLogo from '../img/getir-logo.svg';
 import { BiGlobe } from 'react-icons/bi';
 import { RiUserFill, RiUserAddFill } from 'react-icons/ri';
+import DeliveryAddress from './UI/DeliveryAddress';
 
 function Header(props) {
   return (
-    <div className="bg-brand-color z-50 sticky top-0 order-1">
+    <div className="bg-brand-color z-50 md:sticky md:top-0 order-1">
       <div className="md:container mx-auto h-16 md:h-11 flex items-center justify-center md:justify-between">
         <a href="/">
           <img src={GetirLogo} alt="logo" />
@@ -31,6 +32,7 @@ function Header(props) {
           </a>
         </nav>
       </div>
+      <DeliveryAddress />
     </div>
   );
 }

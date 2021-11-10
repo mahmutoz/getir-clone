@@ -1071,6 +1071,10 @@ html,
   padding: 0.5rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1236,6 +1240,11 @@ html,
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
+.text-brand-color{
+  --tw-text-opacity: 1;
+  color: rgba(76, 51, 152, var(--tw-text-opacity));
 }
 
 .shadow-lg{
@@ -1567,8 +1576,17 @@ html,
     position: absolute;
   }
 
+  .md\:sticky{
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
   .md\:left-1\/2{
     left: 50%;
+  }
+
+  .md\:top-0{
+    top: 0px;
   }
 
   .md\:order-4{
